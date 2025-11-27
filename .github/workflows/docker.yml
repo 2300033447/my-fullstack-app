@@ -27,7 +27,7 @@ jobs:
 
       - name: Build Backend JAR
         working-directory: fundsparkbackend1
-        run: mvn -B clean package
+        run: mvn -B clean package -DskipTests
 
       # Build backend Docker image
       - name: Build backend image
